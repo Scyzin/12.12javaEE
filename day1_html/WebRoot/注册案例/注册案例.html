@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>这是一个注册案例</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+  		<!-- 整个页面 -->
+  		<!-- 
+  			head是由一行两列table完成展示  
+  		-->
+  		<div id="head">
+  			<table width="100%"	>
+  				<tr>
+  					<td width = "70%">
+  						<img alt="logo" src="images/logo.png">
+  					</td>
+  					<td >
+  						<img alt="cart" src="images/cart.gif">
+  						<a href="#">购物车</a>
+  						<a href="#">帮助中心</a>
+  						<a href="#">我的账户</a>
+  						<a href="#">新用户注册</a>
+  					</td>
+  				</tr>
+  			</table>
+  		</div>
+  		<!-- 这是一个menu -->
+  		<div id="menu">
+  			<table width="100%" bgcolor = "#1C3F09">
+  				<tr align="center"> 
+  					<td>
+  						<a href="#"><font color = "#ffffff">文学</font></a>&nbsp;&nbsp;
+  						<a href="#"><font color = "#ffffff">生活</font></a>&nbsp;&nbsp;
+  						<a href="#"><font color = "#ffffff">计算机</font></a>&nbsp;&nbsp;
+  						<a href="#"><font color = "#ffffff">外语</font></a>&nbsp;&nbsp;
+  						<a href="#"><font color = "#ffffff">经管</font></a>&nbsp;&nbsp;
+  						<a href="#"><font color = "#ffffff">励志</font></a>&nbsp;&nbsp;
+  						<a href="#"><font color = "#ffffff">社科</font></a>&nbsp;&nbsp;
+  						<a href="#"><font color = "#ffffff">学术</font></a>&nbsp;&nbsp;
+  						<a href="#"><font color="#ffffff">艺术</font></a>&nbsp;&nbsp;
+						<a href="#"><font color="#ffffff">原版</font></a>&nbsp;&nbsp;
+						<a href="#"><font color="#ffffff">科技</font></a>&nbsp;&nbsp;
+						<a href="#"><font color="#ffffff">考试</font></a>&nbsp;&nbsp;
+						<a href="#"><font color="#ffffff">生活百科</font></a>&nbsp;&nbsp;
+						<a href="#"><font color="yellow">全部商品目录</font></a>
+  					</td>
+  				</tr>
+  			</table>
+  		</div>
+  		<!-- 这是content -->
+  		<div id ="search">
+  			<table bgcolor = "#b6b684"width = "100%">
+  				<tr >
+  					<td align ="right">
+  						Search
+  						<input	type="text"><input type= "button" value = "搜索">
+  						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  					</td>
+  				</tr>
+  			</table>
+  		</div>
+  		<!-- 
+  			注册表格	七行三列
+  		 -->
+  		 <div id ="content">
+  		 	<form name = "我的注册表单" action="#" method="post">
+  		 		<table width="850px" bgcolor="#fcfdef" align="center">
+  		 			<tr>
+  		 				<td>
+			  		 		<table  width="70%"  align="center">
+			  		 			<h1>新会员注册</h1>
+			  		 			<tr>
+			  		 				<td>会员邮箱</td>
+			  		 				<td><input type="text"  name ="uesrmail" value=""></td>
+			  		 				<td><font color ="#999999">请输入有效的邮箱地址</font></td>
+			  		 			</tr>
+			  		 			<tr>
+			  		 				<td>会员名</td>
+			  		 				<td><input type="text"  name ="uesrname" value=""></td>
+			  		 				<td><font color ="#999999">用户名至少6位</font></td>
+			  		 			</tr>
+			  		 			<tr>
+			  		 				<td>会员密码</td>
+			  		 				<td><input type="password"  name ="password" value=""></td>
+			  		 				<td><font color ="#999999">密码至少6位</font></td>
+			  		 			</tr>
+			  		 			<tr>
+									<td>重复密码</td>									
+									<td><input type="password" name="repassword"></td>									
+									<td>&nbsp;</td>
+								</tr>
+			  		 			<tr>
+			  		 				<td>性别</td>
+			  		 				<td><input type="radio" name ="sex" value="male" checked="checked">男
+			  		 				<input type="radio" name ="sex" value="female">女</td>
+			  		 				<td>
+			  		 			</tr>
+			  		 			<tr>
+									<td>联系电话</td>									
+									<td><input type="text" name="phone" value=""></td>									
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>地址</td>
+									<td>
+										<select name="city">
+											<option value="bj">北京</option>
+											<option value="fj">福建</option>
+										</select>
+										<select name="qu">
+											<option >朝阳区</option>
+											<option >厦门市</option>
+										</select>
+									</td>
+								</tr>
+			  		 			<tr>
+			  		 				<td>个人介绍</td>
+			  		 				<td><textarea name ="introduction" cols="20" rows="5">你好，我是</textarea></td>
+			  		 			</tr>
+			  		 		</table>
+			  		 		
+			  		 		<h1>注册校验</h1>
+			  		 		<table align="center" width="70%" border="0" cellspacing="2">
+			  		 			<tr>
+			  		 				<td width="98">输入校验码</td>
+			  		 				<td><input type="text" name="checkcode"></td>
+			  		 				<td>&nbsp;</td>
+			  		 			<tr>
+									<td></td>
+									<td colspan="2">
+										<img src="images/logo.gif" width="155" height="30">
+										<a href="#">看不清换一张</a>
+									</td>
+								</tr>
+							</table>
+							
+							<table width="70%" border="0" cellspacing="2">
+								<tr>
+									<td align="center">
+										<input type="image" src="images/signup.gif">
+									</td>									
+								</tr>
+							</table>
+			  		 		
+		  		 		</td>	
+		  		 	</tr>
+  		 		</table>
+  		 	</form>
+  		 </div>
+  		
+  		<!-- 
+  			foot是由两行两列的table完成。
+  			其中第一个td合并了两行
+  		 -->
+  		 <div>
+  		 	<table bgcolor = "#efeedc" width = "100%"	align = "center">
+  		 		<tr>
+  		 			<td	rowspan="2" >
+  		 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  		 				<img alt="log" src="images/logo.png">
+  		 			</td>
+  		 			<td align = "left">
+  		 				<font>CONTACT US</font>
+  		 			</td>
+  		 		</tr>
+  		 		<tr>
+  		 			<td	align = "left">
+  		 				copyright&nbsp;2017&copy;BookStore All Rights RESERVED
+  		 			</td>
+  		 		</tr>
+  		 	</table>
+  		 </div>
+  </body>
+</html>
