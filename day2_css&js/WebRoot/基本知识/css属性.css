@@ -1,0 +1,24 @@
+span{font-size:10px;font-family: ËÎÌו ;display: none}
+div{
+	color:black;text-decoration:underline;text-align: center
+	
+}
+#d1{background-color: red;width: 200px;height: 200px;display: none;}
+#d2{background-color: pink;width: 200px;height: 200px;}
+a{text-decoration: none}
+/* body{
+	background-color: green;
+	background-image: url("images/dog.gif");
+	background-repeat: repeat-y;
+} */
+
+ul{
+	list-style-type: square;
+	list-style-image:  url("images/forward.gif");
+	
+}
+
+
+
+
+

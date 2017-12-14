@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>bookstore.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+	<style type="text/css">
+		.clear{
+			clear:both;
+		}
+		#top_left{
+			width:400px;
+			float:left;
+			
+		}
+		#top_right{
+			width:400px;
+			float:right;
+			margin:20px;
+			font-size:13px;
+			<a 
+		}
+		#top_right img{
+			margin-top:-5px;
+		}
+		#top_right a{
+			text-decoration: none;
+			color:#06F;
+		}
+		#top_right a:hover{
+			color:red;
+		}
+		#menu{
+			background-color:#1C3F09;
+			width:100%;
+			border-top:5px solid #82B211;
+			padding: 10px 0px;
+			text-align:center;
+		}
+		#menu a{
+			text-decoration: none;
+			margin:0 8px;
+			color:#fff;
+			font-size: 15px;
+			font-weight:bold;
+		}
+		#menu a:hover{
+			color:red;
+		}
+		#search{
+			background-color: #B6B684;
+			text-align: right;
+			padding:2px  0 ;
+		}
+		#search input[type='image']{
+			margin-right:150px;
+			margin-bottom:-4px;
+		}
+		#search input[type='text']{
+			height:14px;
+			border: 1px solid #999;
+		}
+		/*-------*/
+		#content{
+			width:900px;
+			border：1px solid #999;
+			margin:8px auto 15px;/*左右为auto就是div居中*/
+		}
+		
+		#content_top{
+			font-size:15px;
+			text-align: right;
+		}
+		
+		#content_bottom{
+			border:1px solid #999;
+			background-color:#FCEDEF;
+			padding:10px 15px;
+		}
+		
+		#content_bottom h1{
+			font-size: 15px;
+			display:inline;
+		}
+		#content_bottom span{
+			font-size: 13px;
+		}
+		
+		#productlist img[alt='nihao']{
+			width:100%;
+		}
+		
+		.book{
+			float:left;
+			width:25%;
+			text-align: center;
+		}
+		
+		.bookling img{
+			width:130px;
+			height:196px;
+			
+		}
+		
+		#jumppage{
+			text-align: center;
+			margin:10px;
+		}
+		#jumppage a{
+			padding:2px 6px;
+			border:1px solid #9AAFE5;
+			text-decoration: none;
+			color:#9AAFE5;
+		}
+		#jumppage a:hover{
+			color:#2B66A5;
+			border:1px solid #2B66A5;
+		}
+		.current{
+			background-color:blue;
+		}
+		#bottom{
+			background-color: #EFEEDC;
+			height:60px;/*因为下面使用浮动，导致了盒子的移动，找不到父标签*/
+			padding:10px 0px;
+		}
+		
+		#bottom_left{
+			width:300px;
+			float:left;
+			margin-left:200px;
+		}
+		#bottom_right{
+			width:500px;
+			float:left;
+			margin-top:5px;	
+			line-height:28px;/*行高*/	
+		}
+	
+	</style>
+  </head>
+  
+  <body>
+  		<div id="page">
+  			<div id="top">
+  				<div id="top_left">
+  					<img alt="logo" src="images/logo.png">
+  				</div>
+  				<div id="top_right">
+  					<img alt="" src="images/cart.gif">
+  					<a href="#">购物车</a>
+  					<a href="#">帮助中心</a>
+  					<a href="#">我的账户</a>
+  					<a href="#">新用户注册</a>
+  				</div>
+  			</div>
+  			<div class="clear"></div>
+  			<div id="menu">
+  				<a href="#">文学</a>
+				<a href="#">生活</a>
+				<a href="#">计算机</a>
+				<a href="#">外语</a>
+				<a href="#">经管</a>
+				<a href="#">励志</a>
+				<a href="#">社科</a>
+				<a href="#">学术</a>
+				<a href="#">少儿</a>
+				<a href="#">艺术</a>
+				<a href="#">原版</a>
+				<a href="#">科技</a>
+				<a href="#">考试</a>
+				<a href="#">生活百科</a>
+				<a href="#" style="color: yellow">全部商品目录</a>
+  			</div>
+  			<div id="search">
+  				<span>Search</span>
+  				<input type="text" />
+  				<input type="image" src="images/serchButton.gif" alt="button" />
+  			</div>
+  			<div id="content">
+  				<div id="content_top">
+  					<span>首页&nbsp;&gt;&gt;旅游&nbsp;&gt;&gt;图书列表</span>
+  				</div>
+  				<div id="content_bottom">
+  					<h1>商品目录</h1>
+  					<hr/>
+  					<h1>计算机类 </h1>
+  					<span>共100种商品</span>
+  					<hr/>
+  					<div id="productlist">
+  						<div id="productlist_img">
+  							<img alt="nihao" src="images/productlist.gif">
+  						</div>
+  						<div id="booklist">
+  							<div class="book">
+  								<div class="booking">
+  									<img alt="" src="bookcover/101.jpg">
+  								</div>
+  								<div class="bookIntr">
+  									<span>书名：xxx</span><br/>
+  									<span>售价：xxx</span>
+  								</div>
+  							</div>
+  							<div class="book">
+  								<div class="booking">
+  									<img alt="" src="bookcover/102.jpg">
+  								</div>
+  								<div class="bookIntr">
+  									<span>书名：xxx</span><br/>
+  									<span>售价：xxx</span>
+  								</div>
+  							</div>
+  							<div class="book">
+  								<div class="booking">
+  									<img alt="" src="bookcover/103.jpg">
+  								</div>
+  								<div class="bookIntr">
+  									<span>书名：xxx</span><br/>
+  									<span>售价：xxx</span>
+  								</div>
+  							</div>
+  							<div class="book">
+  								<div class="booking">
+  									<img alt="" src="bookcover/104.jpg">
+  								</div>
+  								<div class="bookIntr">
+  									<span>书名：xxx</span><br/>
+  									<span>售价：xxx</span>
+  								</div>
+  							</div>
+  							<div class="clear"></div>
+  							<div id="jumpPage">
+								<a id="disable">上一页</a>
+								<a id="current">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">4</a>
+								<a href="#">5</a>
+								<a href="#">6</a>
+								<a href="#">7</a>
+								<a href="#">8</a>
+								<a href="#">9</a>
+								<a href="#">下一页</a>
+							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  			<div id="bottom">
+  				<div id="bottom_left">
+  					<img alt="" src="images/logo.png">
+  				</div>
+  				<div id="bottom_right">
+  					<span>CONTACT US</span><br/>
+  					<span>copyright 2017&copy;BookStore All Rights RESERVED</span>
+  				</div>
+  			</div>
+  		</div>
+  
+  </body>
+</html>

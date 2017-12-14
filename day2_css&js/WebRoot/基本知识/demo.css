@@ -1,0 +1,24 @@
+
+#div1{color:red;font-size:100px;}
+#div2{color:pink;font-size:100px;}
+span{color:yellow;font-size:50px;}
+#span{color:green;font-size:50px;}
+.span{color:pink;font-size:50px;}
+
+.style1{background-color:red;}
+.style2{background-color:pink;}
+
+input[type='text']{background-color: yellow}
+input[type='password']{background-color: red}
+
+a:link{color:blue}
+a:hover{color:red}
+a:active{color:yellow}
+a:visited{color:green}
+
+#d1 .dd2 span{color:blue}
+
+
+
+
+

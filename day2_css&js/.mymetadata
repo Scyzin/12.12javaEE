@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="day2_css&amp;js"
+  id="myeclipse.1513226029109"
+  context-root="/day2_css&amp;js"
+  j2ee-spec="5.0"
+  archive="day2_css&amp;js.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
