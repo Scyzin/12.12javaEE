@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>js创建及方式使用.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+	
+	
+  </head>
+  
+  <body>
+  		
+  </body>
+  
+  <script type="text/javascript">
+  
+  	//Number-------------------------------------
+  	//var num = new Number(5);
+  	//alert(typeof num);	object
+  	//alert(typeof num.toString())	string
+  	//alert(typeof num.valueOf());	number
+ 	 
+  	//String-------------------------------------
+  	//var str = new String("abcd-efg");
+  	//alert(str.length); 8
+  	//alert(str.charAt(3)) a
+  	//alert(str.charCodeAt(3)) 97 返回字符的数值
+  	//alert(str.indexOf("g"))	6
+  	//alert(str.lastIndexOf("g"))	6
+  	/* var arr = str.split("-");
+  	for(var i=0;i<arr.length;i++){
+  		alert(arr[i])
+  	} */
+  	//alert(str.substring(2, 4)); cd	从第2个索引号位置输出到第4个索引位置
+  	//alert(str.substr(2,4))	cd-e	从第2个索引位置开始，输出4个字符串
+  	//alert(str.toUpperCase())	转大写
+  	
+  	//Array--------------------------------------
+  	//var arr = [3,"z",1,"java",'js',true,4];	创建数组并直接实例化元素
+  	//alert(arr.length); 	数组长度为7。
+  	//alert(arr.join("-"))	所有数组元素通过-连接。
+  	//alert(arr.pop())	删除并返回最后一个字符
+  	//alert(arr.push('141'))	向数组末尾添加一个元素，并返回数组长度
+  	//alert(arr.reverse())	字符数组逆序
+  	//alert(arr.sort())	按照字符串字典顺序进行排序.
+  	
+  	//Date---------------------------------------
+  	//var date = new Date();
+  	//alert(date.toLocaleString());	返回本地时间格式的字符串
+  	//alert(date.getFullYear())		返回年份	2017
+  	//alert(date.getMonth())		返回月份11   	从0开始的  0代表1月
+  	//alert(date.getDate());		返回天数
+  	//alert(date.getDay())		星期天是0，
+  	/* var time = date.getTime();
+  	var time2=3*24*60*60*1000;		返回时间的毫秒值
+  	alert(new Date(time + time2).toLocaleString())*/
+  	
+  	//Math------------------------------------------
+  	//没有创建方式，直接调用方法
+  	//alert(Math.PI)	圆周率
+  	//alert(Math.abs(-15));	 绝对值
+	/* var x = 12.34;
+	var y = 2;
+	var z = 4; */
+	/* alert(Math.ceil(x));//13	向上取整
+	alert(Math.floor(x));//12	向下取整
+	alert(Math.round(x));//12 	四舍五入
+	//alert(Math.pow(y, z));//16	x的y次幂*/
+	//alert(Math.random());		返回0-1之间的随机数
+  	
+  	//--------------------RegExp-----------------------------
+	var email = "haohao_827@163.com";
+	var reg = /^[A-z]+[A-z0-9_-]*\@[A-z0-9]+\.[A-z]+$/;
+	alert(reg.test(email));
+  	
+  	
+  </script>
+  
+</html>

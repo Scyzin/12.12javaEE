@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>onchange事件.html</title>
+
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+</head>
+
+<body>
+	<select id="city">
+		<option value="bj">北京</option>
+		<option value="tj">天津</option>
+		<option value="sh">上海</option>
+	</select>
+	<select id="area">
+		<option>朝阳区</option>
+		<option>海淀区</option>
+		<option>东城区</option>
+	</select>
+</body>
+	<!-- 实现菜单多选的二级联动；onchange：域内容被改变的事件、 -->
+<script type="text/javascript">
+
+	var select = document.getElementById("city");
+	/* 	匿名内部类 */
+	select.onchange = function() {
+		var optionVal = select.value;
+		switch (optionVal) {
+		case 'bj':
+			var area = document.getElementById("area")
+			area.innerHTML = "<option>海淀</option><option>朝阳</option><option>东城</option>";
+			break;
+		case 'tj':
+			var area = document.getElementById("area");
+			area.innerHTML = "<option>南开</option><option>西青</option><option>河西</option>";
+			break;
+		case 'sh':
+			var area = document.getElementById("area");
+			area.innerHTML = "<option>浦东</option><option>杨浦</option>";
+			break;
+		default:
+			alert("error");
+		}
+	};
+</script>
+</html>

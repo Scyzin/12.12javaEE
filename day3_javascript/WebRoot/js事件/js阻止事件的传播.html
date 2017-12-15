@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>js阻止事件的传播.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+  		<div onclick="fn1()" style="width:100px;height:100px;background-color: green;padding: 50px;">
+			<div onclick="fn2(event)"  style="width:100px;height:100px;background-color: red;">xxxx</div>
+		</div>
+  	
+  </body>
+	  <script type="text/javascript">
+
+		function fn1(){
+			alert("fn1");
+		}
+		function fn2(e){
+			alert("fn2");
+			//阻止事件的传播
+			if(e&&e.stopPropagation){
+					alert("w3c");
+					e.stopPropagation();
+				//IE标签
+				}else{
+					alert("ie");
+					window.event.cancelBubble = true;
+			}
+		}
+	</script>
+</html>
