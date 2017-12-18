@@ -3,6 +3,7 @@ package jdbc;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
@@ -36,8 +37,36 @@ public class CRUD {
 		for(User user :list){
 			System.out.println(user);
 		}
-		
 	}
+	@Test
+	public void testSelect1() throws Exception{
+		
+		Class.forName("com.mysql.jdbc.Driver");
+		
+		Connection conn =DriverManager.getConnection("jdbc:mysql://localhost:3306/day06?user=root&password=abc");
+		
+		Statement stmt = conn.createStatement(); 
+		ResultSet rs =stmt.executeQuery("select * from users");
+		List<User> list = new ArrayList<User>();
+		
+		rs.afterLast();
+		rs.previous();
+		
+		User u = new User();
+			u.setId(rs.getInt("id"));
+			u.setName(rs.getString("name"));
+			u.setPassword(rs.getString("password"));
+			u.setEmail(rs.getString("email"));
+			u.setBirthday(rs.getDate("birthday"));
+			list.add(u);
+		
+		rs.close();
+		stmt.close();
+		conn.close();
+		
+			System.out.println(u);
+	}
+	
 	@Test
 	public void test1() throws Exception {
 		Class.forName("com.mysql.jdbc.Driver");
@@ -94,4 +123,66 @@ public class CRUD {
 		conn.close();
 	}
 	
+	
+	@Test
+	public void testSelect3() {
+		
+		Connection conn = null;
+		Statement stmt =null ;
+		ResultSet rs =null ;
+		List<User> list =null;
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/day06?user=root&password=abc");
+			
+			stmt = conn.createStatement(); 
+			rs = stmt.executeQuery("select * from users");
+			list = new ArrayList<User>();
+			while(rs.next( )){
+				User u = new User();
+				u.setId(rs.getInt("id"));
+				u.setName(rs.getString("name"));
+				u.setPassword(rs.getString("password"));
+				u.setEmail(rs.getString("email"));
+				u.setBirthday(rs.getDate("birthday"));
+				list.add(u);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally{
+			//¹Ø±Õ×ÊÔ´
+			if(rs!=null){
+				try {
+					rs.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				rs = null;
+				}
+			if(stmt!=null){
+			try {
+				stmt.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			stmt = null;
+			}
+			if(conn!=null){
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			conn = null;
+			}
+		}
+		for(User user :list){
+			System.out.println(user);
+		}
+	}
+
 }
