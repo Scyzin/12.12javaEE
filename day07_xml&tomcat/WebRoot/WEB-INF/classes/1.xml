@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<books>
+	<book>
+		<name>java编程思想</name>
+		<price>50&lt;30</price>
+		<![CDATA[if 50>30
+		
+		 ]]>
+	</book>
+	<book>
+		<name>java</name>
+		<price>50&lt;30</price>
+		<![CDATA[if 50>30
+		
+		 ]]>
+	</book>
+</books>
