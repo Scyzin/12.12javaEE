@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="day09_HttpServletRequest"
+  id="myeclipse.1514000132286"
+  context-root="/day09_HttpServletRequest"
+  j2ee-spec="5.0"
+  archive="day09_HttpServletRequest.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
