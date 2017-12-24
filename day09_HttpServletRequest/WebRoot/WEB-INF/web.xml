@@ -4,7 +4,61 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
 	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-  <display-name></display-name>	
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>servletDemo1</servlet-name>
+    <servlet-class>servlet.ServletDemo1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>servletDemo2</servlet-name>
+    <servlet-class>servlet.ServletDemo2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>servletDemo3</servlet-name>
+    <servlet-class>servlet.ServletDemo3</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>servletDemo4</servlet-name>
+    <servlet-class>servlet.ServletDemo4</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>servletDemo5</servlet-name>
+    <servlet-class>servlet.ServletDemo5</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>servletDemo6</servlet-name>
+    <servlet-class>servlet.ServletDemo6</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>servletDemo1</servlet-name>
+    <url-pattern>/servlet/servletDemo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servletDemo2</servlet-name>
+    <url-pattern>/servlet/servletDemo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servletDemo3</servlet-name>
+    <url-pattern>/servlet/servletDemo3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servletDemo4</servlet-name>
+    <url-pattern>/servlet/servletDemo4</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servletDemo5</servlet-name>
+    <url-pattern>/servlet/servletDemo5</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servletDemo6</servlet-name>
+    <url-pattern>/servlet/servletDemo6</url-pattern>
+  </servlet-mapping>	
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
