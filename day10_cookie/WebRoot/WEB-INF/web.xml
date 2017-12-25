@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>cookieDemo1</servlet-name>
+    <servlet-class>cookie.CookieDemo1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>cookieDemo2</servlet-name>
+    <servlet-class>cookie.CookieDemo2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>clearServlet</servlet-name>
+    <servlet-class>cookie.ClearServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>doLoginServlet1</servlet-name>
+    <servlet-class>login.DoLoginServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>loginServlet1</servlet-name>
+    <servlet-class>login.LoginServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>showServlet</servlet-name>
+    <servlet-class>history.ShowAllBooksServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>showBookDetail</servlet-name>
+    <servlet-class>history.ShowBookDetail</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>cookieDemo1</servlet-name>
+    <url-pattern>/servlet/cookieDemo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>cookieDemo2</servlet-name>
+    <url-pattern>/servlet/cookieDemo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>clearServlet</servlet-name>
+    <url-pattern>/servlet/clearServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>doLoginServlet1</servlet-name>
+    <url-pattern>/servlet/doLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>loginServlet1</servlet-name>
+    <url-pattern>/servlet/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showServlet</servlet-name>
+    <url-pattern>/servlet/show</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showBookDetail</servlet-name>
+    <url-pattern>/servlet/show2</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
