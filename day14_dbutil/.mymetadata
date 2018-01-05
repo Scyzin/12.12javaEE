@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="day14_dbutil"
+  id="myeclipse.1515125175941"
+  context-root="/day14_dbutil"
+  j2ee-spec="5.0"
+  archive="day14_dbutil.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
