@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="day17_auto"
+  id="myeclipse.1515394640066"
+  context-root="/day17_auto"
+  j2ee-spec="5.0"
+  archive="day17_auto.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
