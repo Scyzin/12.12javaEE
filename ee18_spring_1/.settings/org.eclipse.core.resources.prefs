@@ -1,0 +1,10 @@
+#Tue Mar 06 19:00:23 CST 2018
+eclipse.preferences.version=1
+encoding//src/c_inject/b_static_factory=UTF-8
+encoding//src/c_inject/b_static_factory/MyBeanFactory.java=UTF-8
+encoding//src/c_inject/c_factory=UTF-8
+encoding//src/d_scope=UTF-8
+encoding//src/e_lifecycle=UTF-8
+encoding//src/e_lifecycle/MyBeanPostProcessor.java=UTF-8
+encoding//src/f_xml=UTF-8
+encoding//src/g_annotation=UTF-8
