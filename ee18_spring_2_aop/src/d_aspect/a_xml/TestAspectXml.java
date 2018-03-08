@@ -1,10 +1,10 @@
-package c_spring_aop;
+package d_aspect.a_xml;
 
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class TestSpringAop {
+public class TestAspectXml {
 	
 	@Test
 	public void demo01(){
